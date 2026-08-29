@@ -1,8 +1,14 @@
 # ForensicVLM-Lite
 
+### Does a VLM point to the evidence behind its forensic decision?
+
 A small experiment testing whether a vision-language model's forensic explanation is actually grounded in the manipulated part of an image.
 
+**40 images · 50% manipulation detection · 80% correct localisation when detected**
+
 **Question:** If a VLM correctly says an image was manipulated, does the region it points to match the true edited region?
+
+![Four representative outcomes](results/four_cases.png)
 
 ## Result
 
@@ -18,13 +24,7 @@ I tested `Qwen/Qwen2.5-VL-7B-Instruct` zero-shot on **20 matched authentic/manip
 
 The interesting part is the gap: Qwen missed half of the manipulations, but when it correctly detected one, its suspicious region matched the actual edit in **8/10 cases**. In this small test, manipulation detection was a bigger weakness than localisation.
 
-## Examples
-
-![Four representative outcomes](results/four_cases.png)
-
-The four cases show: **correct authentic**, **missed manipulation**, **correct detection + correct localisation**, and **correct detection + wrong localisation**.
-
-A correct forensic verdict can still be supported by the wrong visual evidence. This demo keeps the **verdict** and the **grounding of the explanation** separate so that those cases can be inspected directly.
+The four cases above show **correct authentic**, **missed manipulation**, **correct detection + correct localisation**, and **correct detection + wrong localisation**. A correct forensic verdict can still be supported by the wrong visual evidence, so the demo keeps the verdict and its spatial grounding separate.
 
 ## Run it
 
