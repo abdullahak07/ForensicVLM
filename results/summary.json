@@ -1,0 +1,14 @@
+{
+  "n_total": 40,
+  "n_valid": 40,
+  "classification_accuracy": 0.725,
+  "manipulated_n": 20,
+  "localization_given_rate_manipulated": 0.5,
+  "pointing_game_hit_rate_when_region_given": 0.8,
+  "correct_manipulated_verdicts": 10,
+  "correct_verdict_correct_region_rate": 0.8,
+  "correct_verdict_wrong_region_rate": 0.2,
+  "correct_verdict_no_region_rate": 0.0,
+  "authentic_n": 20,
+  "hallucinated_region_rate_authentic": 0.05
+}
