@@ -23,17 +23,17 @@ The main observation is asymmetric behaviour: the model is much better at recogn
 
 ### Qualitative examples
 
-![Four representative cases](figures/four_cases.png)
+![Four representative cases](results/four_cases.png)
 
 The four panels show a correct authentic verdict, a missed manipulation, a correctly detected and localised manipulation, and a correctly detected manipulation with incorrect localisation.
 
 ### Pair and mask check
 
-![Matched pairs and masks](figures/check_pairs.png)
+![Matched pairs and masks](results/check_pairs.png)
 
 ### Additional examples
 
-![Additional model examples](figures/examples.png)
+![Additional model examples](results/examples.png)
 
 ## Setup
 
