@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+.cache/
+huggingface/
+*.bak
+*.before_fix
+*.before_region_fix
+*token*
